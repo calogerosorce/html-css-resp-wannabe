@@ -132,10 +132,24 @@ img {
 @media screen and (max-width: 768px) {
 
     body {
+        img {
+            width: 100%;
+        }
+
+        div {
+            width: 95%;
+            margin: 0 auto;
+        }
 
         main {
             .container {
-                max-width: 479px;
+                width: 100%;
+
+                .row {
+                    .col {
+                        width: 100%;
+                    }
+                }
             }
         }
     }
@@ -150,12 +164,23 @@ img {
     }
 
     body {
+        img {
+            width: 100%;
+
+        }
+
+        div {
+            width: 95%;
+            margin: 0 auto;
+        }
+
         main {
             .container {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                max-width: 360px;
+                width: 100%;
+
 
 
                 .row {
