@@ -214,3 +214,29 @@ img {
         margin: 0;
     }
 }
+
+@media screen and (max-width: 1160px) {
+
+    body {
+        img {
+            width: 100%;
+        }
+
+        div {
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        main {
+            .container {
+                width: 100%;
+
+                .row {
+                    .col {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
