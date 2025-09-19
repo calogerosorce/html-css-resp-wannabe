@@ -130,24 +130,18 @@ img {
  ************************************************/
 
 @media screen and (max-width: 768px) {
-    html {
-        width: 768px;
-    }
 
     body {
 
         main {
             .container {
-                width: 768px;
+                max-width: 479px;
             }
         }
     }
 }
 
 @media screen and (max-width: 480px) {
-    html {
-        width: 480px;
-    }
 
     header {
         display: flex;
@@ -161,7 +155,7 @@ img {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                width: 480px;
+                max-width: 360px;
 
 
                 .row {
