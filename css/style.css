@@ -130,8 +130,12 @@ img {
  ************************************************/
 
 @media screen and (max-width: 768px) {
+    html {
+        width: 768px;
+    }
 
     body {
+
         main {
             .container {
                 width: 768px;
@@ -141,6 +145,9 @@ img {
 }
 
 @media screen and (max-width: 480px) {
+    html {
+        width: 480px;
+    }
 
     header {
         display: flex;
@@ -151,21 +158,40 @@ img {
     body {
         main {
             .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
                 width: 480px;
+
 
                 .row {
                     display: flex;
                     flex-direction: column;
-                    justify-content: center;
 
                     .col {
-                        display: flex;
-                        justify-content: center;
+                        width: 100%;
+
+                        .card {
+                            padding-bottom: 30px;
+                        }
                     }
                 }
             }
-
         }
     }
 
+    .why-us {
+        background-color: black;
+        padding-top: 40px;
+        margin-bottom: 0;
+
+        h2 {
+
+            font-size: 45px;
+        }
+    }
+
+    .steps {
+        margin: 0;
+    }
 }
